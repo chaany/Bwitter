@@ -1,20 +1,19 @@
 
 <html>
 <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bwitter</title>
-    <link rel="icon" href="pic_ac.png" >
-
+    <link rel="icon" href="pic_ac.png">
 
 
 </head>
+
 <body style="background: #181818;">
     <style>
-
-        header{
+        header {
             width: 100%;
             height: 10%;
             align-items: center;
@@ -22,30 +21,34 @@
             background: rgb(33 33 33 / 98%);
             float: left;
         }
-        nav{
+
+        nav {
             width: 17%;
             height: 210%;
             background: rgb(33 33 33 / 98%);
             overflow-y: auto;
             float: left;
         }
-        footer{
+
+        footer {
             width: 100%;
             height: 20%;
             background: rgb(33 33 33 / 98%);
             float: left;
         }
-        main{
+
+        main {
             width: 80%;
             height: 100%;
             background: #181818;
             padding-bottom: 50%;
             overflow-y: auto;
-            
-            
+
+
         }
-        main article{
-            
+
+        main article {
+
             width: 90%;
             height: 30%;
             background: rgb(39, 39, 39);
@@ -54,82 +57,130 @@
             /* margin-left: 20%; */
             margin-top: 0%;
 
-            
+
         }
-        .cont{
+
+        .cont {
             width: 100%;
-            
+
         }
+
         
-        .nav-link:hover{
+        .nav-link:hover {
             background-color: rgba(5, 5, 5, 0.05);
         }
-    
+
+        #add:hover {
+            background-color: #000000;
+        }
     </style>
-    
-    
-    
+
+
+
     <header>
         <div style="display:flex;align-items: center;height:45px;width:45px;">
-            
-            <a href="https://www.youtube.com/channel/UCXNCEHif0tPVLlog-k05bvw" target="_blank"><img src="pic_ac.png" alt="" style="width: 100%;"></a>
+
+            <a href="https://www.youtube.com/channel/UCXNCEHif0tPVLlog-k05bvw" target="_blank"><img src="pic_ac.png"
+                    alt="" style="width: 100%;"></a>
         </div>
         <div style="display:flex;align-items: center;height:45px;width:45px;" id="not">
             <img src="notifacations.png" alt="" style="width: 100%;">
-            
-        </div>
+
+            <!-- </div>
         <div style="display:flex;align-items: center;height:45px;width:45px;" id="add">
             <img src="add.png" alt="" style="width: 100%;height:45px;width:45px;">
-            
-        </div>
-        <hr style="width: 100%;">
+
+        </div> -->
+            <!--<hr style="width: 100%;">-->
+
 
     </header>
+
     <nav style="flex-direction: column;display: block;">
         
-        <div class="cont" >
-            <div id="dive" style="display:flex;align-items: center;" class="nav-link">
-                <img  src="user.png" alt="" style="height:40px;width:40px;"> <label style="font-size:medium;margin-left: 10px;color: rgb(255, 255, 255);">Account</label></div>
-                   
+        <div class="cont">
+
+            <a href="account.html" style="text-decoration: none;">
+                <div id="dive" style="display:flex;align-items: center;" class="nav-link">
+                    <img src="user.png" alt="" style="height:40px;width:40px;"> <label
+                        style="font-size:medium;margin-left: 10px;color: rgb(255, 255, 255);text-decoration: none;">Account</label>
+                </div>
+            </a>
             <div style="display:flex;align-items: center;" class="nav-link">
-                <img src="settings.png" alt="" style="height:40px;width:40px;"><label style="font-size:medium;margin-left: 10px;color: rgb(255, 255, 255);">Settings</label></div>
+                <img src="settings.png" alt="" style="height:40px;width:40px;"><label
+                    style="font-size:medium;margin-left: 10px;color: rgb(255, 255, 255);">About</label>
+            </div>
             <div style="display:flex;align-items: center;" class="nav-link">
-                <img src="dashboard.png" alt="" style="height:40px;width:40px;"><label style="font-size:medium;margin-left: 10px;color: rgb(255, 255, 255);">Dashboard</label></div> 
+                <img src="dashboard.png" alt="" style="height:40px;width:40px;"><label
+                    style="font-size:medium;margin-left: 10px;color: rgb(255, 255, 255);">Dashboard</label>
+            </div>
             <div style="display:flex;align-items: center;" class="nav-link">
-                <img src="anal.png" alt="" style="height:40px;width:40px;"> <label style="font-size:medium;margin-left: 10px;color: rgb(255, 255, 255);">Analystics</label></div> 
-                
+                <img src="anal.png" alt="" style="height:40px;width:40px;"> <label
+                    style="font-size:medium;margin-left: 10px;color: rgb(255, 255, 255);">Analystics</label>
+            </div>
+
             <hr style="width: 90%;border-color: rgb(255, 255, 255);">
             <div style="display:flex;align-items: center;" class="nav-link">
-                <img src="history.png" alt="" style="height:40px;width:40px;"> <label style="font-size:medium;margin-left: 10px;color: rgb(255, 255, 255);">History</label></div>
-                
+                <img src="history.png" alt="" style="height:40px;width:40px;"> <label
+                    style="font-size:medium;margin-left: 10px;color: rgb(255, 255, 255);">History</label>
+            </div>
+
             <div style="display:flex;align-items: center;" class="nav-link">
-                <img src="event.png" alt="" style="height:40px;width:40px;"> <label style="font-size:medium;margin-left: 10px;color: rgb(255, 255, 255);">Event</label></div> 
+                <img src="event.png" alt="" style="height:40px;width:40px;"> <label
+                    style="font-size:medium;margin-left: 10px;color: rgb(255, 255, 255);">Event</label>
+
+
+            </div>
             <hr style="width: 90%;border-color: rgb(255, 255, 255);">
-            <P style="padding-left: 10px;font-size: large;color: white;">following</P>
+
+            <button id="add" class="add" type="button"
+                style="font-size: 100%; display: flex;background-color: #0b75d8;border: none;border-radius: 10px;width: 80%;height: 5%;margin-left: 10%;align-items: center;justify-content: center;">Bweet</button>
+            <button id="del" class="add" type="button"
+                style="font-size: 100%;display: flex;background-color: #d80b0b;border: none;border-radius: 10px;width: 80%;height: 5%;margin-left: 10%;margin-top: 2%;align-items: center;justify-content: center;">Delete</button>
+            <a href="" style="text-decoration: none;">
+                <button id="del" class="add" type="button"
+                style="font-size: 100%;display: flex;background-color: #b9d80b;border: none;border-radius: 10px;width: 80%;height: 5%;margin-left: 10%;margin-top: 2%;align-items: center;justify-content: center;">Refresh</button></a>
+            
+                <hr style="width: 90%;border-color: rgb(255, 255, 255);">
+            <P style="padding-left: 10px;font-size: large;color: white;" >following</P>
             <hr style="width: 90%;border-color: rgb(255, 255, 255);">
             <div style="display:flex;align-items: center;height:45px;width:45px;padding-left: 10px" class="nav-link">
-                <img src="pic_ac.png" alt="" style="width: 100%;"><label style="font-size:large;margin-left: 10px;color: rgb(255, 255, 255);">CoderMero</label>
+                <img src="pic_ac.png" alt="" style="width: 100%;"><label
+                    style="font-size:large;margin-left: 10px;color: rgb(255, 255, 255);">CoderMero</label>
+            </div>
+
+            <div style="display:flex;align-items: center;height:45px;width:45px;padding-left: 10px;margin-top: 10px;"
+                class="nav-link">
+                <img src="pic_ac.png" alt="" style="width: 100%;"><label
+                    style="font-size:large;margin-left: 10px;color: rgb(255, 255, 255);">CoderMero</label>
+            </div>
+            <div style="display:flex;align-items: center;height:45px;width:45px;padding-left: 10px;margin-top: 10px;"
+                class="nav-link">
+                <img src="pic_ac.png" alt="" style="width: 100%;"><label
+                    style="font-size:large;margin-left: 10px;color: rgb(255, 255, 255);">CoderMero</label>
+            </div>
+            <div style="display:flex;align-items: center;height:45px;width:45px;padding-left: 10px;margin-top: 10px;"
+                class="nav-link">
+                <img src="pic_ac.png" alt="" style="width: 100%;"><label
+                    style="font-size:large;margin-left: 10px;color: rgb(255, 255, 255);">CoderMero</label>
             </div>
             
-            <div style="display:flex;align-items: center;height:45px;width:45px;padding-left: 10px;margin-top: 10px;" class="nav-link">
-                <img src="pic_ac.png" alt="" style="width: 100%;"><label style="font-size:large;margin-left: 10px;color: rgb(255, 255, 255);">CoderMero</label>
-            </div>
-            <div style="display:flex;align-items: center;height:45px;width:45px;padding-left: 10px;margin-top: 10px;" class="nav-link">
-                <img src="pic_ac.png" alt="" style="width: 100%;"><label style="font-size:large;margin-left: 10px;color: rgb(255, 255, 255);">CoderMero</label>
-            </div>
-            <div style="display:flex;align-items: center;height:45px;width:45px;padding-left: 10px;margin-top: 10px;" class="nav-link">
-                <img src="pic_ac.png" alt="" style="width: 100%;"><label style="font-size:large;margin-left: 10px;color: rgb(255, 255, 255);">CoderMero</label></div>
             
+
 
     </nav>
     <main id="content">
 
         <article>
             <div style="display:flex;align-items: center;">
-            <img src="pic_ac.png" alt="" style="width: 30px; height: 30px;margin-top: 10px;margin-left: 10px;"><label style="margin-left: 10px; margin-top: 8px;color: white;">CoderMero</label></div>
+                <img src="pic_ac.png" alt="" id="ai"
+                    style="width: 30px; height: 30px;margin-top: 10px;margin-left: 10px;"><label
+                    style="margin-left: 10px; margin-top: 8px;color: white;">CoderMero</label>
+            </div>
             <hr style="width: 95%;">
-            <textarea style="margin-left: 20px;color: rgb(56, 8, 8);width: 95%;height: 50%;border-radius: 10px;background-color: #181818;color: white;font-size: 15px;">
-                </textarea> 
+            <textarea
+                style="margin-left: 20px;color: rgb(56, 8, 8);width: 95%;height: 50%;border-radius: 10px;background-color: #181818;color: white;font-size: 15px;resize: none;" >
+                </textarea>
             <div style="padding-left: 10px;">
                 <img src="heart.png" alt="" style="width: 20px; height: 20px;margin-top: 10px;">
                 <img src="like.png" alt="" style="width: 20px; height: 20px;padding-left: 2px;">
@@ -137,7 +188,7 @@
             </div>
         </article>
 
-  
+
     </main>
     <footer>
         <fieldset>
@@ -145,20 +196,20 @@
             <p style="font-size: larger;">this site developed by coder mero</p>
         </fieldset>
     </footer>
-    
+
     <script>
-        
+
 
         var add = document.getElementById("add")
         var main = document.getElementById("content")
-
-        add.onclick=()=>{
-            main.innerHTML = main.innerHTML +  `
+        var Delete = document.getElementById("del")
+        add.onclick = () => {
+            main.innerHTML = main.innerHTML + `
             <article>
             <div style="display:flex;align-items: center;">
-            <img src="pic_ac.png" alt="" style="width: 30px; height: 30px;margin-top: 10px;margin-left: 10px;"><label style="margin-left: 10px; margin-top: 8px;color: white;">CoderMero</label></div>
+            <img id="ai" src="pic_ac.png" alt="" style="width: 30px; height: 30px;margin-top: 10px;margin-left: 10px;"><label style="margin-left: 10px; margin-top: 8px;color: white;">CoderMero</label></div>
             <hr style="width: 95%;">
-            <textarea style="margin-left: 20px;color: rgb(56, 8, 8);width: 95%;height: 50%;border-radius: 10px;background-color: #181818;color: white;font-size: 15px;">
+            <textarea style="margin-left: 20px;color: rgb(56, 8, 8);width: 95%;height: 50%;border-radius: 10px;background-color: #181818;color: white;font-size: 15px;resize: none;">
                 </textarea> 
             <div style="padding-left: 10px;">
                 <img src="heart.png" alt="" style="width: 20px; height: 20px;margin-top: 10px;">
@@ -167,15 +218,24 @@
             </div>
         </article>
             `
+            localStorage.setItem("item", main.innerHTML);
+        }
+
+        Delete.onclick = () =>{
+            main.innerHTML = ""
+            localStorage.setItem("item", main.innerHTML);
+        }
+        let sacdasd = 455
+        
+        onload = () =>{
+            main.innerHTML = localStorage.getItem("item", main.innerHTML);
         }
 
 
-
-            
-        
-        
-        
-
     </script>
-</body> 
+
+</body>
+
 </html>
+
+
